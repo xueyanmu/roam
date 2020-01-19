@@ -1,0 +1,104 @@
+<head>
+
+  
+  
+  
+<div class="siteWrapper">
+ <div class='container'>
+   <div class="header">
+   <h1 class = 'title'> Roam 
+       <a href="#try-it" id="jumplinks">try it</a>
+       <a href="#about-roam"id="jumplinks">about roam</a>
+       <a href="#why-roam"id="jumplinks">why roam</a></h1>
+   <img id='walking-elf' src="https://i.imgur.com/5XL9Due.gif"></img>
+   
+   
+  
+  <div class="row">
+    <div class="column" id="column-left">
+      <link rel="stylesheet" type="text/css" href="myfile.css" media="screen and (max-width: 800px)" />
+      <h3 id="try-it"> A randomized destination generator. </h3>
+        <h4> Input the minutes you'd like to walk for, in total. The outputted coordinates can be copy-pasted into Google Maps to create your path.</h4>
+        <br></br>
+    </div>
+    <div class="column" id="column-right">
+      
+              <div class='jumbotron'>
+                <div class="row">
+                  <div class="column">
+                      <input id='time' type='number' id='onchange' class='input' placeholder="0 minutes"><br></br>
+   
+                  <button class='btn btn-danger' id='get-random'> Random Destination!</button><br></br>             
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<p id="p1"> <button class='btn' id='random-location' onclick="randomLocationGlobal"> Destination Coords<div id='random-location' class='col'></div></button>
+                </p>
+      <button onclick="copyToClipboard('#p1')">Copy Coordinates</button><br></br></div>
+     <div class="column"><div class='row'>
+      <div class='col'>
+        <!--The div element for the map -->
+        <div id="map"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrJ27PMnwaGSsv6LqxX8wVQKz2_D34bco&callback=initMap">
+        </script></div>
+              </div>
+      </div>
+    </div>
+  </div>
+</div> <br></br><br></br>
+
+<h2 class="about-titles" id='about-roam'> About Roam</h2><br></br>
+<h4>Travelling is good for the soul. People like having small adventures to nearby locations. However, sometimes options can seem limited. As a tool to overcome <a href = "https://en.wikipedia.org/wiki/Filter_bubble" class="has-tool-tip" style="position:relative;"> filter-bubble</a>
+  and fit adventures of any length into our schedules, Roam was developed.</h4>
+<h4>In the future, we hope to develop Roam into a site where people can store their previous destinations if desired, write a little bit about how the adventure went, and share with friends. We could futhermore potentially display the stories you write about your adventures on our homepage, and develop a culture of local Roamers. <3 </h4> 
+<h4>We also hope to implement real <a href = "https://www.esri.com/arcgis-blog/products/arcgis-online/analytics/make-a-walk-time-map/" class="has-tool-tip" style="position:relative;"> walk-time maps</a> into our algorithm, to give a more accurate time estimate of your adventures.</h4>
+  <h4>If you'd like to see these developments happen soon, click <span style="background-color: rgba(250, 43, 221, 0.5)"><a href = "https://docs.google.com/forms/d/e/1FAIpQLSemP7rwIwkHtec7IwmsgIaszCv_LUJzzAPdSaU1KwG9YLIMuw/viewform?usp=sf_link" class="has-tool-tip" style="position:relative;"> here! </a></span></h4>
+  </div>
+
+
+  <br></br><br></br>
+  
+<h2 class="about-titles" id='why-roam'>Why Roam?</h2>
+   <div class="row">
+    <div class="column" id="column-left">
+        <img class='gifs' src="https://media.giphy.com/media/McWTxnpVZp6lG/giphy.gif" alt="Blog Thumbnail"></img>
+</div>
+     <div class="column" id='column-right'>
+    <h3 class="list">Burst Your Bubble</h3>
+    <h4><p>“For the past two years I’ve been letting randomized computer programs decide what I do. I believe giving in to chance is a way to liberate yourself from personal and social programming that traps you in a narrow sense of self.” </p>
+      <p>- Max Hawkins, <a href = "maxhawkins.me" class="has-tool-tip" style="position:relative;"> nomadic programmer</a></p>
+<p>We were inspired by Max Hawkins’ philosophy on choice. Our random walking site draws heavily on his work!</p></h4><br></br></div></div>
+   <div class="row">
+    <div class="column" id="column-left">
+      <img class='gifs' src="https://media.giphy.com/media/o5oLImoQgGsKY/giphy.gif" alt="Blog Thumbnail"></img> </div>
+      <div class="column" id="column-right">
+    <h3 class="list">All Dressed Up with Nowhere to Go</h3>
+    <h4>We wanted places to discover on Friday nights. Choosing on Yelp or Google was too difficult and limiting for us. We often felt like we needed a ‘reason’ to ‘go somewhere’, rather than seeing the act of walking as the adventure itself. Roaming allowed us to shift to a different, more experience-focused mindset.</h4><br></br></div></div>
+   <div class="row" id='befriend'>
+    <div class="column" id="column-left">
+        <img class='gifs' src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.myconfinedspace.com%2Fwp-content%2Fuploads%2F2018%2F11%2Fflower-smelling-cat-720x405.jpg&f=1&nofb=1" alt="Blog Thumbnail"></img>
+</div>
+     <div class="column" id='column-right'>
+    <h3 class="list">Befriend Your Area</h3>
+    <h4>Roaming is a way to become more familiar with the minutia of a place. Walking can develop a different, slower, and perhaps richer relationship to a place. Also, sometimes we discovered cool secret places on our walks.</h4><br></br></div></div>
+   <div class="row" id='befriend'>
+    <div class="column" id="column-left" >
+<img class='gifs' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.buzzfeed.com%2Fbuzzfeed-static%2Fstatic%2F2014-03%2Fenhanced%2Fwebdr03%2F28%2F22%2Fanigif_enhanced-929-1396061272-4.gif&f=1&nofb=1" alt="Blog Thumbnail"></img></div>
+     <div class="column" id='column-right'>
+    <h3 class="list">Ditch the Car</h3>
+    <h4><p>As students living in a spread-out, car-culture city, it felt like we needed the convenience of a car to do anything fun. However, as we walked more in the surrounding area, we saw the journey itself as the destination, and then cars seemed less important. We were also using a more diversified transportation system for our adventurous outings. We developed a small but strong pedestrian community, while reducing reliance on carbon-emitting vehicles! As an added bonus, we exercised our bodies (and spirits!).</p>
+
+<p>“For Crosby, driving is most often a means to an end whereas walking is an end in itself, even when it is also a means to a destination. A driver may have a choice among several possible routes, but usually chooses the one that takes the least time. A pedestrian is freer to focus on the walk itself, the passing scene – the landscape, the buildings, the people, the birds, other animals, the gardens, the sounds and sights. The senses are more fully engaged, and the act of locomotion is more of a living bridge
+between the walker and his or her environment. There are choices of a different kind, connections of a different kind, spontaneity of a different kind. As for convenience, its main virtue seems closely tied to the ego. The car culture is tightly bound to conscious purpose. Walking is more conditional, more circumstantial.”</p>
+<p>- Jonathan Andelson, <a href = "https://www.grinnell.edu/sites/default/files/documents/Crosbys%20Footprint.pdf" class="has-tool-tip" style="position:relative;"> Crosby’s Footprint</a></p></h4></div>
+  
+       <div id="wrapper"><h2>"Dope"</h2><p>-<a href = "thearae.com" class="has-tool-tip" style="position:relative;"> Thea Rae</a>, web developer and artist </p><br></br>
+      <h2>"I'm backing this"</h2><p>-Elon Musk, professional </p><br></br>
+      <h2>"Roam is legit"</h2><p>-Chloe, architecture student </p><br></br></div></div>
+<a href="#" class="#top">Back to Top</a>
+      </div>                    
+       </div>
+    </div>
+  </div>               
+</head>
+
+  
